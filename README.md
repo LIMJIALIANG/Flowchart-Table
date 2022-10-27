@@ -50,8 +50,8 @@ COUNT2 --> F3{"length >= 2.1 && width >= 1"}
 H21{"counter == 0"}
 H22{"counter == 1"}
 H23[/"Display the length of hall/room that can fix the table, <br> the width of hall/room that can fix the table </br>"/]
-G31[/"Display 'We would suggest you to choose Rectangle Bertha with 8 seaters as the first choice.' </br>"/]
-G32[/"Display 'We would suggest you to choose Rectangle Bertha with 8 seaters as the second choice.' </br>"/]
+G31[/"Display 'We would suggest you to choose Rectangle Bertha <br> with 8 seaters as the first choice.' </br>"/]
+G32[/"Display 'We would suggest you to choose Rectangle Bertha <br> with 8 seaters as the second choice.' </br>"/]
 COUNT3["counter += 1"]
 
 
@@ -69,8 +69,8 @@ COUNT3 --> F4{"length >= 1.5 && width >= 1.5"}
 H31{"counter == 0"}
 H32{"counter == 1"}
 H33[/"Display the length of hall/room that can fix the table, <br> the width of hall/room that can fix the table </br>"/]
-G41[/"Display 'We would suggest you to choose Rectangle Bertha with 8 seaters as the first choice.' </br>"/]
-G42[/"Display 'We would suggest you to choose Rectangle Bertha with 8 seaters as the second choice.' </br>"/]
+G41[/"Display 'We would suggest you to choose Rectangle Bertha <br> with 8 seaters as the first choice.' </br>"/]
+G42[/"Display 'We would suggest you to choose Rectangle Bertha <br> with 8 seaters as the second choice.' </br>"/]
 COUNT4["counter += 1"]
 
 
