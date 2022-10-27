@@ -60,6 +60,6 @@ H21 --> |"TRUE"|G31 --> COUNT3
 H21 --> |"FALSE"|H22
 
 H22 --> |"TRUE"|G32 --> COUNT3
-H22 --> |"FALSE"|H13
+H22 --> |"FALSE"|H23
 
 H23 --> STOP
