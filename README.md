@@ -55,7 +55,7 @@ G32[/"Display 'We would suggest you to choose Rectangle Bertha with 8 seaters as
 COUNT3["counter += 1"]
 
 
-F3 --> |"TRUE"|H11
+F3 --> |"TRUE"|H21
 H21 --> |"TRUE"|G31 --> COUNT3
 H21 --> |"FALSE"|H22
 
