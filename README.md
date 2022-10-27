@@ -44,3 +44,22 @@ H12 --> |"TRUE"|G22 --> COUNT2
 H12 --> |"FALSE"|H13
 
 H13 --> STOP
+
+COUNT2 --> F3{"length >= 2.1 && width >= 1"}
+
+H21{"counter == 0"}
+H22{"counter == 1"}
+H23[/"Display the length of hall/room that can fix the table, <br> the width of hall/room that can fix the table </br>"/]
+G31[/"Display 'We would suggest you to choose Rectangle Bertha with 8 seaters as the first choice.' </br>"/]
+G32[/"Display 'We would suggest you to choose Rectangle Bertha with 8 seaters as the second choice.' </br>"/]
+COUNT3["counter += 1"]
+
+
+F3 --> |"TRUE"|H11
+H21 --> |"TRUE"|G31 --> COUNT3
+H21 --> |"FALSE"|H22
+
+H22 --> |"TRUE"|G32 --> COUNT3
+H22 --> |"FALSE"|H13
+
+H23 --> STOP
