@@ -41,9 +41,7 @@ H11 --> |"TRUE"|G21 --> COUNT2
 H11 --> |"FALSE"|H12
 
 H12 --> |"TRUE"|G22 --> COUNT2
-H12 --> |"FALSE"|H13
-
-H13 --> STOP
+H12 --> |"FALSE"|STOP
 
 COUNT2 --> F3{"length >= 2.1 && width >= 1"}
 
@@ -60,9 +58,7 @@ H21 --> |"TRUE"|G31 --> COUNT3
 H21 --> |"FALSE"|H22
 
 H22 --> |"TRUE"|G32 --> COUNT3
-H22 --> |"FALSE"|H23
-
-H23 --> STOP
+H22 --> |"FALSE"|STOP
 
 COUNT3 --> F4{"length >= 1.5 && width >= 1.5"}
 
@@ -79,6 +75,5 @@ H31 --> |"TRUE"|G41 --> COUNT4
 H31 --> |"FALSE"|H32
 
 H32 --> |"TRUE"|G42 --> COUNT4
-H32 --> |"FALSE"|H33
+H32 --> |"FALSE"|STOP
 
-H33 --> STOP
