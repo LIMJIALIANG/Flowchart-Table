@@ -62,8 +62,8 @@ COUNT3 --> F4{"length >= 1.5 && width >= 1.5"}
 
 H31{"counter == 0"}
 H32{"counter == 1"}
-G41[/"Display 'We would suggest you to choose Rectangle Bertha <br> with 8 seaters as the first choice.' </br>"/]
-G42[/"Display 'We would suggest you to choose Rectangle Bertha <br> with 8 seaters as the second choice.' </br>"/]
+G41[/"Display 'We would suggest you to choose Round Emma <br> with 6 seaters as the first choice.' </br>"/]
+G42[/"Display 'We would suggest you to choose Round Emma <br> with 6 seaters as the second choice.' </br>"/]
 COUNT4["counter += 1"]
 
 
@@ -74,3 +74,18 @@ H31 --> |"FALSE"|H32
 H32 --> |"TRUE"|G42 --> COUNT4
 H32 --> |"FALSE"|STOP
 
+COUNT4 --> F5{"length >= 1.35 && width >= 1.35"}
+
+H41{"counter == 0"}
+H42{"counter == 1"}
+G51[/"Display 'We would suggest you to choose Round Emma <br> with 6 seaters as the first choice.' </br>"/]
+G52[/"Display 'We would suggest you to choose Round Emma <br> with 6 seaters as the second choice.' </br>"/]
+COUNT5["counter += 1"]
+
+
+F5 --> |"TRUE"|H41
+H41 --> |"TRUE"|G51 --> COUNT5
+H41 --> |"FALSE"|H42
+
+H42 --> |"TRUE"|G52 --> COUNT5
+H42 --> |"FALSE"|STOP
