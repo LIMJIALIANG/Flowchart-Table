@@ -151,6 +151,6 @@ F9 --> |"TRUE"|H81
 H81 --> |"TRUE"|G91 --> COUNT9
 H81 --> |"FALSE"|H82
 
-H82 --> |"TRUE"|92 --> COUNT9
+H82 --> |"TRUE"|G92 --> COUNT9
 H82 --> |"FALSE"|STOP
 ```
