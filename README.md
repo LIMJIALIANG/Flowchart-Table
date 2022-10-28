@@ -105,3 +105,52 @@ H51 --> |"FALSE"|H52
 
 H52 --> |"TRUE"|G62 --> COUNT6
 H52 --> |"FALSE"|STOP
+
+COUNT6 --> F7{"length >= 1.3 && width >= 0.8"}
+
+H61{"counter == 0"}
+H62{"counter == 1"}
+G71[/"Display 'We would suggest you to choose Rectangle Heinrich <br> with 6 seaters as the first choice.' </br>"/]
+G72[/"Display 'We would suggest you to choose Rectangle Heinrich <br> with 6 seaters as the second choice.' </br>"/]
+COUNT7["counter += 1"]
+
+
+F7 --> |"TRUE"|H61
+H61 --> |"TRUE"|G71 --> COUNT7
+H61 --> |"FALSE"|H62
+
+H62 --> |"TRUE"|G72 --> COUNT7
+H62 --> |"FALSE"|STOP
+
+COUNT7 --> F8{"length >= 0.9 && width >= 0.9"}
+
+H71{"counter == 0"}
+H72{"counter == 1"}
+G81[/"Display 'We would suggest you to choose Square Lea <br> with 4 seaters as the first choice.' </br>"/]
+G82[/"Display 'We would suggest you to choose Square Lea <br> with 4 seaters as the second choice.' </br>"/]
+COUNT8["counter += 1"]
+
+
+F8 --> |"TRUE"|H71
+H71 --> |"TRUE"|G81 --> COUNT8
+H71 --> |"FALSE"|H72
+
+H72 --> |"TRUE"|G82 --> COUNT8
+H72 --> |"FALSE"|STOP
+
+COUNT8 --> F9{"length >= 0.76 && width >= 0.76"}
+
+H81{"counter == 0"}
+H82{"counter == 1"}
+G91[/"Display 'We would suggest you to choose Rectangle Heinrich <br> with 6 seaters as the first choice.' </br>"/]
+G92[/"Display 'We would suggest you to choose Rectangle Heinrich <br> with 6 seaters as the second choice.' </br>"/]
+COUNT9["counter += 1"]
+
+
+F9 --> |"TRUE"|H81
+H81 --> |"TRUE"|G91 --> COUNT9
+H81 --> |"FALSE"|H82
+
+H82 --> |"TRUE"|92 --> COUNT9
+H82 --> |"FALSE"|STOP
+```
