@@ -144,13 +144,11 @@ H81{"counter == 0"}
 H82{"counter == 1"}
 G91[/"Display 'We would suggest you to choose Rectangle Heinrich <br> with 6 seaters as the first choice.' </br>"/]
 G92[/"Display 'We would suggest you to choose Rectangle Heinrich <br> with 6 seaters as the second choice.' </br>"/]
-COUNT9["counter += 1"]
-
 
 F9 --> |"TRUE"|H81
-H81 --> |"TRUE"|G91 --> COUNT9
+H81 --> |"TRUE"|G91 --> STOP
 H81 --> |"FALSE"|H82
 
-H82 --> |"TRUE"|G92 --> COUNT9
+H82 --> |"TRUE"|G92 --> STOP
 H82 --> |"FALSE"|STOP
 ```
